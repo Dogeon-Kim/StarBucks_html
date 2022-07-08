@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Korea</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="./css/main-2.css">  /* css연결 */
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style>
+        .main-menu {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   z-index: 1;
+   display: flex;
+ }
+
+ .main-menu .item .item__name {
+   padding: 10px 20px 34px 20px;
+   font-family: Arial, sans-serif;
+   font-size: 13px;
+ }
+
+ .main-menu .item:hover .item__name {
+   background-color: #2C2A29;
+   color: #669900;
+   border-radius: 6px 6px 0 0;
+ }
+
+ .main-menu .item .item__contents {
+   width: 100%;
+   position: fixed;
+   left: 0;
+   display: none;
+ }
+
+ .main-menu .item:hover .item__contents {
+   display: block;
+ }
+
+ .main-menu .item .item__contents .contents__menu {
+   background-color: #2C2A29;
+ }
+
+ .main-menu .item .item__contents .contents__menu > ul {
+   padding: 20px 0;
+   display: flex;
+ }
+
+ .main-menu .item .item__contents .contents__menu > ul > li {
+   width: 220px;
+ }
+
+ .main-menu .item .item__contents .contents__menu > ul > li h4 {
+   padding: 3px 0 12px 0;
+   font-size: 14px;
+   color: #fff;
+ }
+
+ .main-menu .item .item__contents .contents__menu > ul > li ul li {
+   padding: 5px 0;
+   font-size: 12px;
+   color: #999;
+   cursor: pointer;
+ }
+
+ .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+   color: #669900;
+ }
+
+ .main-menu .item .item__contents .contents__texture {
+   padding: 26px 0;
+   font-size: 12px;
+   background-image: url("../images/main_menu_pattern.jpg");
+ }
+
+ .main-menu .item .item__contents .contents__texture h4 {
+   color: #999;
+   font-weight: 900;
+ }
+
+ .main-menu .item .item__contents .contents__texture p {
+   color: #64a70b;
+   margin: 4px 0 14px;
+ }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <a href="/" class="logo">
+                <img src="./images/starbucks_logo.png" alt="STARBUCKS" />
+            </a>
+            <div class="sub-menu">
+                <ul class="menu">
+                    <li>
+                        <a href="/signin">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">My Starbucks</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Customer Service & Ideas</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Find a Store</a>
+                    </li>
+                </ul>
+                <div class="search">
+                    <input type="text"/>
+                    <div class="material-icon">search</div>
+                </div>   
+            </div>
+        
+
+        <ul class="main-menu">
+            <li class="item">
+                <div class="item__name">COFFEE
+                <div class="item-contents">
+                    <div class="contents__menu">
+                        <ul class="contents__texture">
+                            <li><h4>커피</h4>
+                            <ul>
+                                <li>스타벅스 원두</li>
+                                <li>스타벅스 비아</li>
+                                <li>스타벅스 오리가미</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item">
+                <div class="contents__name">MENU</div>
+                <div class="contents__contents"></div>
+            </li>
+            <li class="item">
+                <div class="contents__name">STORE</div>
+                <div class="contents__contents"></div>
+            </li>
+            <li class="item">
+                <div class="contents__name">RESPONSIBILITY</div>
+                <div class="contents__contents"></div>
+            </li>
+            <li class="item">
+                <div class="contents__name">MY STARBUCKS</div>
+                <div class="contents__contents"></div>
+            </li>
+            <li class="item">
+                <div class="contents__name">WHAT'S NEW</div>
+                <div class="contents__contents"></div>
+            </li>
+        </ul>
+    </div>
+    </header>
+</body>
+</html>
